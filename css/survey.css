@@ -30,7 +30,7 @@ body {
 
 header {
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 }
 
 #title {
@@ -67,6 +67,8 @@ select {
 input[type=checkbox],
 input[type=radio]{
     outline: none;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 /* TODO: fix disabled option background color */
@@ -79,4 +81,8 @@ input[type=radio]{
     color: var(--clr-white);
     text-transform: capitalize;
     height: 2.5rem;
+}
+
+span {
+    font-size: 0.8rem;
 }

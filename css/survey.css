@@ -71,10 +71,11 @@ input[type=radio]{
     height: 1.25rem;
 }
 
-/* TODO: fix disabled option background color */
-/* option:disabled {
-    background-color: white;
-} */
+/* fix for disabled option background color
+   background-color: transparent; didnt work */
+option:disabled {
+    background-color: rgba(255, 255, 255, 0.0);
+}
 
 #submit {
     background-color: var(--clr-green);

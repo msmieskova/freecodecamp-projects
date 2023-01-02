@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* html {
@@ -18,7 +19,6 @@ body {
     min-height: 100vh;
     background-color: var(--clr-lightblue);
     color: var(--clr-white);
-    font-family: 'Poppins', sans-serif;
 }
 
 #title,
@@ -38,4 +38,15 @@ form {
     width: 45rem;
     background-color: var(--clr-darkblue);
     padding: 2.5rem;
+}
+
+input,
+textarea {
+    border-radius: 2px;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+select {
+    /* line-height: 1.8rem; */
+    height: 2rem;
 }

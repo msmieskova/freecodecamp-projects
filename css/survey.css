@@ -69,6 +69,11 @@ input[type=radio]{
     outline: none;
 }
 
+/* TODO: fix disabled option background color */
+/* option:disabled {
+    background-color: white;
+} */
+
 #submit {
     background-color: var(--clr-green);
     color: var(--clr-white);

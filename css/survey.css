@@ -55,7 +55,7 @@ form {
 .wrapper {
     display: flex;
     flex-direction: column;
-    margin: 0 0 1.6rem 0;
+    margin: 0 0 1.5rem 0;
 }
 
 .wrapper:last-of-type {
@@ -66,12 +66,11 @@ input,
 textarea,
 select {
     border-radius: 2px;
-    /* padding-left: 20px; */
 }
 
 input:not([type=checkbox]):not([type=radio]):not([type=submit]),
 select {
-    height: 2.15rem;
+    height: 2.25rem;
 }
 
 label {
@@ -102,7 +101,7 @@ option:disabled {
     background-color: var(--clr-green);
     color: var(--clr-white);
     text-transform: capitalize;
-    padding: 0.75rem 0;
+    padding: 0.5rem 0;
 }
 
 span {

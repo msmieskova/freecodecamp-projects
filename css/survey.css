@@ -1,7 +1,9 @@
 :root {
-    --clr-darkblue: rgba(9, 9, 22, 0.7);
-    --clr-lightblue: rgba(59, 59, 221, 0.7);
-    --clr-white: rgb(255, 255, 255);
+    --clr-darkblue: #1b1b32;
+    --clr-darkblue-back: rgba(27, 27, 50, 0.8);
+    --clr-white: #f3f3f3;
+    --clr-green: #37af65;
+    --clr-blue: rgb(50, 50, 241);
 }
 
 * {
@@ -9,6 +11,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+:focus {
+    outline: 2px solid var(--clr-blue);
 }
 
 /* html {
@@ -17,13 +24,17 @@
 
 body {
     min-height: 100vh;
-    background-color: var(--clr-lightblue);
+    background-color: var(--clr-darkblue-back);
     color: var(--clr-white);
 }
 
-#title,
-#description {
+header {
     text-align: center;
+    padding: 1.5rem 0;
+}
+
+#title {
+    font-weight: 400;
 }
 
 #description {
@@ -38,10 +49,12 @@ form {
     width: 45rem;
     background-color: var(--clr-darkblue);
     padding: 2.5rem;
+    border-radius: 4px;
 }
 
 input,
-textarea {
+textarea,
+select {
     border-radius: 2px;
 }
 
@@ -49,4 +62,16 @@ input:not([type=checkbox]):not([type=radio]),
 select {
     /* line-height: 1.8rem; */
     height: 2rem;
+}
+
+input[type=checkbox],
+input[type=radio]{
+    outline: none;
+}
+
+#submit {
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+    text-transform: capitalize;
+    height: 2.5rem;
 }

@@ -14,6 +14,7 @@
     border: none;
 }
 
+/* base styles */
 body {
     background-color: var(--clr-white);
 }
@@ -22,10 +23,24 @@ body {
     background-color: var(--clr-lightgrey);
 }
 
+/* intro section styles */
 #tribute-intro {
     background-color: var(--clr-white);    
 }
 
+/* info section styles */
+.description::before {
+    content: " - ";
+}
+
+.quote,
+cite {
+    font-style: italic;
+}
+
+cite::before {
+    content: "-- ";
+}
 
 /* tribute link styles */
 #tribute-link {
@@ -35,3 +50,5 @@ body {
 #tribute-link:active {
     color: var(--clr-violet);
 }
+
+/* media queries */

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form*</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/survey.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    
+    <form action="" id="survey-form">
+        <div class="wrapper">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Enter your name" class="input-block">
+        </div>
+        
+        <div class="wrapper">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="" id="email" required placeholder="Enter your email" class="input-block">
+        </div>
+        
+        <div class="wrapper">
+            <label for="number" id="number-label">Age<span>(optional)</span></label>
+            <input type="number" name="" id="number" min="1" max="100" placeholder="Age" class="input-block">
+        </div>
+        
+        <div class="wrapper">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="dropdown" id="dropdown" class="input-block">
+                <option value="" disabled selected>Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Other</option>
+            </select>
+        </div>
+        
+        <div class="wrapper">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="radio-opt1"><input type="radio" name="radio" id="radio-opt1" value="1" checked class="checkbox-radio">Definitely</label>
+            <label for="radio-opt2"><input type="radio" name="radio" id="radio-opt2" value="2" class="checkbox-radio">Maybe</label>
+            <label for="radio-opt3"><input type="radio" name="radio" id="radio-opt3" value="3" class="checkbox-radio">Not sure</label>
+        </div>
+        
+        <div class="wrapper">
+            <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+            <select name="dropdown" id="dropdown" class="input-block">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+            </select>
+        </div>
+        
+        <div class="wrapper">
+            <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+            <label for="checkbox-opt1"><input type="checkbox" name="checkbox" id="checkbox-opt1" value="1" class="checkbox-radio">Front-end Projects</label>
+            <label for="checkbox-opt2"><input type="checkbox" name="checkbox" id="checkbox-opt2" value="2" class="checkbox-radio">Back-end Projects</label>
+            <label for="checkbox-opt3"><input type="checkbox" name="checkbox" id="checkbox-opt3" value="3" class="checkbox-radio">Data Visualization</label>
+            <label for="checkbox-opt4"><input type="checkbox" name="checkbox" id="checkbox-opt4" value="4" class="checkbox-radio">Challenges</label>
+            <label for="checkbox-opt5"><input type="checkbox" name="checkbox" id="checkbox-opt5" value="5" class="checkbox-radio">Open Source Community</label>
+            <label for="checkbox-opt6"><input type="checkbox" name="checkbox" id="checkbox-opt6" value="6" class="checkbox-radio">Gitter help rooms</label>
+            <label for="checkbox-opt7"><input type="checkbox" name="checkbox" id="checkbox-opt7" value="7" class="checkbox-radio">Videos</label>
+            <label for="checkbox-opt8"><input type="checkbox" name="checkbox" id="checkbox-opt8" value="8" class="checkbox-radio">City Meetups</label>
+            <label for="checkbox-opt9"><input type="checkbox" name="checkbox" id="checkbox-opt9" value="9" class="checkbox-radio">Wiki</label>
+            <label for="checkbox-opt10"><input type="checkbox" name="checkbox" id="checkbox-opt10" value="10" class="checkbox-radio">Forum</label>
+            <label for="checkbox-opt11"><input type="checkbox" name="checkbox" id="checkbox-opt11" value="11" class="checkbox-radio">Additional Courses</label>
+        </div>
+        
+        <div class="wrapper">
+            <label for="textarea">Any comments or suggestions?</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="4" placeholder="Enter your comment here..."  class="input-block"></textarea>
+        </div>
+        
+        <div class="wrapper">
+            <input type="submit" name="submit" id="submit" value="submit">
+        </div>        
+    </form>
+    
+</body>
+</html>

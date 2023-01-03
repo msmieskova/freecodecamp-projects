@@ -1,0 +1,37 @@
+/* variables */
+:root {
+    --clr-lightgrey: rgb(231, 231, 231);
+    --clr-blue: rgb(87, 118, 187);
+    --clr-violet: rgb(109, 89, 139);
+    --clr-white: rgb(255, 255, 255);
+}
+
+/* reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: var(--clr-white);
+}
+
+#container {
+    background-color: var(--clr-lightgrey);
+}
+
+#tribute-intro {
+    background-color: var(--clr-white);    
+}
+
+
+/* tribute link styles */
+#tribute-link {
+    color: var(--clr-blue);
+}
+
+#tribute-link:active {
+    color: var(--clr-violet);
+}

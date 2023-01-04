@@ -1,0 +1,58 @@
+/* base variables */
+/* :root {
+    
+} */
+
+* {
+    
+    outline: 1px solid black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*  ------------------
+    OPTION 1 - FLEXBOX
+    ------------------  */
+
+    /* #container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    nav {
+        width: 20rem;
+        overflow: scroll;
+    }
+    
+    main {
+        width: calc(100% - 20rem);   
+        overflow: scroll; 
+    } */
+    
+    
+    
+    /*  -------------------------
+        OPTION 2 - FIXED POSITION
+        -------------------------   */
+    
+    /* #container {
+    
+    }  */
+    
+    nav {
+        height: 100vh;
+        width: 20rem;
+        overflow: scroll;
+        position: fixed;
+    }
+    
+    main {
+        width: calc(100% - 20rem);   
+        margin-left: 20rem;
+    }
+

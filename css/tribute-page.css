@@ -39,7 +39,7 @@ section {
 
 /* header styles */
 header {
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-bottom: 1rem;
 }
 
@@ -52,13 +52,18 @@ header {
 /* intro section styles */
 #tribute-intro {
     background-color: var(--clr-white);
-    width: 117rem;
     padding: 1rem 0;
 }
 
 #img-caption {
     text-align: center;
     margin-top: 1rem;
+}
+
+#img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* TODO: maxwidth and height on image to resize responsively + display block*/

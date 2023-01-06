@@ -120,6 +120,10 @@ article ul {
     margin-left: 4rem;
 }
 
+article li {
+    margin: 1rem 0
+}
+
 article code {
     display: block;
     background-color: var(--clr-code-grey);

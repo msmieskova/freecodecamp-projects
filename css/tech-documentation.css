@@ -1,6 +1,7 @@
 /* base variables */
 :root {
     --clr-grey: rgb(145, 145, 145);   
+    --clr-code-grey: rgb(243, 243, 243); 
 }
 
 /* reset styles */
@@ -17,6 +18,7 @@ body {
     height: 100vh;
     min-height: 100vh;
     font-family: Arial, sans-serif;
+    line-height: 1.5rem;
 }
 
 @media (min-width: 820px) {
@@ -91,8 +93,7 @@ nav a {
 /* main content styles */
 main {
     max-width: 100%; 
-    padding: 1rem;
-    
+    padding: 1.8rem;
 }
 
 @media (min-width: 820px) {
@@ -100,5 +101,34 @@ main {
         overflow: scroll;
     }
 }
-    
+   
+h1 {
+    font-size: 2rem;
+}
+
+article {
+    margin: 2rem 0;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+article p {
+    margin: 1rem 0;
+}
+
+article ul {
+    margin-left: 4rem;
+}
+
+article code {
+    display: block;
+    background-color: var(--clr-code-grey);
+    padding: 1rem;
+    margin: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: pre-line;
+}
 

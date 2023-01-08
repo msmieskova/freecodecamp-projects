@@ -1,6 +1,6 @@
 :root {
     --clr-orange: orange;
-    --clr-yellow: yellow;
+    --clr-yellow: rgb(255, 203, 61);
     --clr-grey: grey;
 }
 
@@ -39,7 +39,8 @@ header {
     align-items: center;
     width: 100%;
     height: 5rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    /* TODO: fixed position */
 }
 
 #header-logo {
@@ -77,6 +78,25 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+
+#email-input {
+    line-height: 1.5rem;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 17rem;
+    padding-left: 0.5rem;
+}
+
+#submit-button {
+    text-transform: uppercase;
+    background-color: var(--clr-yellow);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.35em 1.25em;
+    border: none;
+    border-radius: 2px;
 }
 
 #features {

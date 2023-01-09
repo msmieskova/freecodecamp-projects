@@ -28,12 +28,6 @@ body {
     margin: 0 auto;
 }
 
-main,
-footer {
-    width: 100%;
-    max-width: 70rem;
-}
-
 /* header styles */
 header {
     display: flex;
@@ -94,7 +88,13 @@ nav ul {
     }
 }
 
-/* main styles */
+/* page content styles */
+main,
+footer {
+    width: 100%;
+    max-width: 70rem;
+}
+
 #main {
     display: flex;
     flex-direction: column;
@@ -165,6 +165,11 @@ button {
     margin: 2rem 0;
 }
 
+i {
+    font-size: 3rem;
+    color: var(--clr-orange);
+}
+
 .feature-icon {
     flex-basis: 20%;
     text-align: center;
@@ -185,11 +190,6 @@ button {
         flex-basis: 80%;
         text-align: left;
     }
-}
-
-i {
-    font-size: 3rem;
-    color: var(--clr-orange);
 }
 
 /* video styles */
@@ -243,11 +243,12 @@ i {
 
 .pricing-option-description {
     margin: 1rem 0;
-}
-
-.pricing-option-description li {
     line-height: 2rem;
 }
+
+/* .pricing-option-description li {
+    line-height: 2rem;
+} */
 
 #tenor-trombone {
     grid-area: first;

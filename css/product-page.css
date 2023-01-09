@@ -32,7 +32,8 @@ body {
 
 main,
 footer {
-    width: 60%;
+    width: 100%;
+    max-width: 70rem;
 }
 
 /* header styles */
@@ -44,10 +45,17 @@ header {
     height: 5rem;
     justify-content: space-between;
     /* TODO: fixed position */
+    padding: 0 1rem;
 }
 
 #header-logo {
-    flex-basis: 50%;
+    flex-basis: 40%;
+}
+
+@media (min-width: 650px) {
+    #header-logo {
+        flex-basis: 65%;
+    }
 }
 
 #logo {
@@ -56,14 +64,28 @@ header {
 }
 
 nav {
-    flex-basis: 40%;
+    flex-basis: 60%;
+}
+
+@media (min-width: 650px) {
+    nav {
+        flex-basis: 40%;
+    }
 }
 
 nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     text-transform: capitalize;
+    justify-content: space-evenly;
+    gap: 0.25rem;
+}
+
+@media (min-width: 650px) {
+    nav ul {
+        flex-direction: row;        
+    }
 }
 
 /* main styles */
@@ -145,15 +167,28 @@ i {
     width: 100%;
     display: grid;
     grid-template-areas: 
-        'first second third';
-    gap: 1.5rem;
+        'first'
+        'second'
+        'third';
+    gap: 0.75rem;
     grid-auto-columns: 1fr;
+    justify-items: center;
+    
+}
+
+@media (min-width: 800px) {
+    #pricing {
+        gap: 1.5rem;
+        grid-template-areas: 
+            'first second third';        
+    }
 }
 
 .pricing-option {
+    width: 100%;
     border: 1px solid black;
     text-align: center;
-    /* padding: 1rem; */
+    max-width: 20rem;
 }
 
 .pricing-title-wrap {

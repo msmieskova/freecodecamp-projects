@@ -1,0 +1,284 @@
+:root {
+    --clr-orange: rgb(255, 166, 0);
+    --clr-yellow: rgb(255, 203, 61);
+    --clr-grey: rgb(216, 216, 216);
+    --clr-lightgrey: rgb(238, 238, 238);
+    --clr-darkgrey: rgb(56, 56, 56);
+}
+
+
+/* reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+/* global styles */
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--clr-lightgrey);
+}
+
+#content > * {
+    margin: 0 auto;
+}
+
+main,
+footer {
+    width: 100%;
+    max-width: 70rem;
+}
+
+/* header styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 0.5rem;
+    background-color: var(--clr-lightgrey);
+    position: fixed;
+    top: 0;
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+    }
+}
+
+#header-logo {
+    flex-basis: 40%;
+}
+
+@media (min-width: 650px) {
+    #header-logo {
+        flex-basis: 65%;
+    }
+}
+
+#logo {
+    max-width: 20rem;
+    height: auto;
+}
+
+nav {
+    flex-basis: 60%;
+}
+
+@media (min-width: 650px) {
+    nav {
+        flex-basis: 40%;
+    }
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    justify-content: space-evenly;
+    gap: 0.25rem;
+}
+
+@media (min-width: 650px) {
+    nav ul {
+        flex-direction: row;        
+    }
+}
+
+/* main styles */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+@media (min-width: 650px) {
+    #main {
+        margin-top: 4rem;
+    }
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* form styles */
+#form h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#email-input {
+    line-height: 1.5rem;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 17rem;
+    padding-left: 0.5rem;
+}
+
+#submit-button {
+    font-weight: bold;
+    padding: 0.35em 1.25em;
+}
+
+#submit-button,
+button {
+    text-transform: uppercase;
+    background-color: var(--clr-yellow);
+    font-size: 1em;
+    border: none;
+    border-radius: 2px;
+}
+
+button {
+    padding: 0.5em 1.25em;
+    margin: 1rem 0;
+}
+
+/* features section styles */
+#features {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.feature-icon {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .feature-icon {
+        display: none;
+    }
+}
+
+.feature-text {
+    text-align: center;
+}
+
+@media (min-width: 550px) {
+    .feature-text {
+        flex-basis: 80%;
+        text-align: left;
+    }
+}
+
+i {
+    font-size: 3rem;
+    color: var(--clr-orange);
+}
+
+/* video styles */
+#video iframe {
+    max-width: 100%;
+}
+
+/* pricing options styles */
+#pricing {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        'first'
+        'second'
+        'third';
+    gap: 0.75rem;
+    grid-auto-columns: 1fr;
+    justify-items: center;
+    
+}
+
+@media (min-width: 800px) {
+    #pricing {
+        gap: 1.5rem;
+        grid-template-areas: 
+            'first second third';        
+    }
+}
+
+.pricing-option {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    max-width: 20rem;
+}
+
+.pricing-title-wrap {
+    background-color: var(--clr-grey);
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.price {
+    margin: 1rem 0;
+}
+
+.price::before {
+    content: "$"
+}
+
+.pricing-option-description {
+    margin: 1rem 0;
+}
+
+.pricing-option-description li {
+    line-height: 2rem;
+}
+
+#tenor-trombone {
+    grid-area: first;
+}
+
+#bass-trombone {
+    grid-area: second;
+}
+
+#valve-trombone {
+    grid-area: third;
+}
+
+/* footer styles */
+footer {
+    background-color: var(--clr-grey);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    text-align: right;
+    gap: 0.5rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--clr-darkgrey);
+}

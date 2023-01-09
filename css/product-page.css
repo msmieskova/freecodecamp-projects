@@ -24,10 +24,8 @@ body {
     background-color: var(--clr-lightgrey);
 }
 
-#content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#content > * {
+    margin: 0 auto;
 }
 
 main,
@@ -43,9 +41,11 @@ header {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    /* TODO: fixed position */
     padding: 1rem;
     gap: 0.5rem;
+    background-color: var(--clr-lightgrey);
+    position: fixed;
+    top: 0;
 }
 
 @media (min-width: 600px) {
@@ -95,10 +95,17 @@ nav ul {
 }
 
 /* main styles */
-main {
+#main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 8rem;
+}
+
+@media (min-width: 650px) {
+    #main {
+        margin-top: 4rem;
+    }
 }
 
 section {

@@ -39,6 +39,7 @@ nav {
     padding: 1rem 3rem;
     display: flex;
     justify-content: flex-end;
+    border-bottom: 2px solid var(--clr-darkgrey);
 }
 
 nav ul {

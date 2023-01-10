@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+
 /* variables definition */
 :root {
     --clr-red: rgb(182, 45, 57);
-    --clr-grey: rgb(59, 59, 59);
+    --clr-darkgrey: rgb(37, 37, 37);
+    --clr-grey: grey;
     --clr-blue: rgb(78, 97, 150);
     --clr-white: white;
 }
 
+/* styles reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +17,17 @@
     font-style: normal;
     list-style: none;
     color: var(--clr-white);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
+/* global styles */
 body {
     min-height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
 }
 
 /* nav styles */
@@ -46,8 +55,20 @@ nav ul {
 
 /* main content styles */
 #about {
-    background-color: var(--clr-grey);
+    /* TODO: add gradient */
+    background-color: var(--clr-darkgrey);
     height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about > p {
+    color: var(--clr-red);
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 #work {
@@ -55,10 +76,10 @@ nav ul {
 }
 
 #contact {
-    background-color: var(--clr-grey);
+    background-color: var(--clr-darkgrey);
 }
 
 /* footer styles */
 footer {
-    background-color: var(--clr-grey);
+    background-color: var(--clr-darkgrey);
 }

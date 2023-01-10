@@ -1,8 +1,8 @@
 /* variables definition */
 :root {
-    --clr-red: red;
-    --clr-grey: grey;
-    --clr-blue: blue;
+    --clr-red: rgb(182, 45, 57);
+    --clr-grey: rgb(59, 59, 59);
+    --clr-blue: rgb(78, 97, 150);
     --clr-white: white;
 }
 
@@ -14,14 +14,40 @@
     list-style: none;
     color: var(--clr-white);
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-header {
+body {
+    min-height: 100vh;
+}
+
+/* nav styles */
+nav {
+    width: 100%;
     background-color: var(--clr-red);
+    position: fixed;
+    top: 0;
+    min-height: 4.5rem;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+/* main content styles */
 #about {
     background-color: var(--clr-grey);
+    height: 100vh;
 }
 
 #work {
@@ -32,6 +58,7 @@ header {
     background-color: var(--clr-grey);
 }
 
+/* footer styles */
 footer {
     background-color: var(--clr-grey);
 }

@@ -4,7 +4,7 @@
 :root {
     --clr-red: rgb(182, 45, 57);
     --clr-darkgrey: rgb(37, 37, 37);
-    --clr-grey: grey;
+    --clr-grey: rgb(50, 54, 63);
     --clr-blue: rgb(78, 97, 150);
     --clr-white: white;
 }
@@ -54,6 +54,7 @@ nav ul {
 }
 
 /* main content styles */
+/* about section */
 #about {
     /* TODO: add gradient */
     background-color: var(--clr-darkgrey);
@@ -71,10 +72,72 @@ nav ul {
     font-weight: 200;
 }
 
+/* work section */
 #work {
     background-color: var(--clr-blue);
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
+#work > h2 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin-bottom: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "one two three"
+    "four five six";
+    grid-auto-columns: 1fr;
+    max-width: 80rem;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.tile {
+    background-color: var(--clr-grey);
+}
+
+.project-img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: calc(100% - 4.25rem);
+}
+
+.project-name {
+    font-size: 1.25rem;
+    padding: 1.25rem 0;
+}
+
+.tile:nth-child(1){
+    grid-area: one;
+}
+
+.tile:nth-child(2){
+    grid-area: two;
+}
+
+.tile:nth-child(3){
+    grid-area: three;
+}
+
+.tile:nth-child(4){
+    grid-area: four;
+}
+
+.tile:nth-child(5){
+    grid-area: five;
+}
+
+.tile:nth-child(6){
+    grid-area: six;
+}
+
+/* contact section */
 #contact {
     background-color: var(--clr-darkgrey);
     height: calc(100vh - 10.5rem);   

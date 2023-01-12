@@ -137,6 +137,14 @@ nav ul {
     grid-area: six;
 }
 
+.btn {
+    background-color: var(--clr-grey);
+    padding: 0.5em 1em;
+    display: inline-block;
+    margin: 3rem 0;
+    font-size: 1.25em;
+}
+
 /* contact section */
 #contact {
     background-color: var(--clr-darkgrey);

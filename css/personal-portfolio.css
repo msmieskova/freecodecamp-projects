@@ -5,7 +5,7 @@
     --clr-red: rgb(182, 45, 57);
     --clr-darkgrey: rgb(37, 37, 37);
     --clr-grey: rgb(50, 54, 63);
-    --clr-blue: rgb(78, 97, 150);
+    --clr-blue: rgb(62, 78, 121);
     --clr-white: white;
 }
 
@@ -36,7 +36,7 @@ nav {
     background-color: var(--clr-red);
     position: fixed;
     top: 0;
-    padding: 1rem 3rem;
+    /* padding: 1rem 3rem; */
     display: flex;
     justify-content: flex-end;
     border-bottom: 2px solid var(--clr-darkgrey);
@@ -45,12 +45,18 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
     align-items: center;
+    margin-right: 2rem;
 }
 
 .nav-link {
+    display: block;
     font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.nav-link:hover {
+    background-color: var(--clr-blue);
 }
 
 /* main content styles */
@@ -137,6 +143,7 @@ nav ul {
     grid-area: six;
 }
 
+/* TODO: color change + animations on hover */
 .btn {
     background-color: var(--clr-grey);
     padding: 0.5em 1em;
@@ -170,6 +177,7 @@ address {
     gap: 2rem;
 }
 
+/* TODO: hover animation */
 .address-text::before {
     content: " ";
 }

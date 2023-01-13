@@ -169,7 +169,7 @@ nav ul {
 
 /* contact section */
 #contact {
-    background-color: var(--clr-darkgrey);
+    background-color: var(--clr-grey);
     height: calc(100vh - 10.5rem);   
     display: flex;
     flex-direction: column;
@@ -192,14 +192,27 @@ address {
     gap: 2rem;
 }
 
-/* TODO: hover animation */
+.address-link {
+    padding: 0.5em 0;
+    display: inline-block;
+    text-shadow: var(--clr-darkgrey) 3px 3px;
+}
+
+.address-link {
+    transition: transform 0.25s linear;
+}
+
+.address-link:hover {
+    transform: translateY(0.5rem);
+}
+
 .address-text::before {
     content: " ";
 }
 
 /* footer styles */
 footer {
-    background-color: var(--clr-darkgrey);
+    background-color: var(--clr-grey);
     border-top: 4px solid var(--clr-red);
     padding: 2rem 0;
     display: flex;

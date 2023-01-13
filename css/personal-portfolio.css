@@ -40,6 +40,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     border-bottom: 2px solid var(--clr-darkgrey);
+    z-index: 5;
 }
 
 nav ul {

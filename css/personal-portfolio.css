@@ -3,8 +3,8 @@
 /* variables definition */
 :root {
     --clr-red: rgb(182, 45, 57);
-    --clr-darkgrey: rgb(37, 37, 37);
-    --clr-grey: rgb(50, 54, 63);
+    --clr-darkgrey: rgb(31, 31, 31);
+    --clr-grey: rgb(57, 61, 70);
     --clr-blue: rgb(62, 78, 121);
     --clr-white: white;
     --clr-orange: orange;
@@ -62,8 +62,8 @@ nav ul {
 /* main content styles */
 /* about section */
 #about {
-    /* TODO: add gradient */
     background-color: var(--clr-darkgrey);
+    background: linear-gradient(45deg, var(--clr-grey), var(--clr-darkgrey));
     height: 100vh;
     text-align: center;
     display: flex;

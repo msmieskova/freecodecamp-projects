@@ -7,6 +7,7 @@
     --clr-grey: rgb(50, 54, 63);
     --clr-blue: rgb(62, 78, 121);
     --clr-white: white;
+    --clr-orange: orange;
 }
 
 /* styles reset */
@@ -107,6 +108,16 @@ nav ul {
     background-color: var(--clr-grey);
 }
 
+.tile:hover .project-name::before {
+    content: "< ";
+    color: var(--clr-orange);
+}
+
+.tile:hover .project-name::after {
+    content: " />";
+    color: var(--clr-orange);
+}
+
 .project-img {
     display: block;
     object-fit: cover;
@@ -143,13 +154,17 @@ nav ul {
     grid-area: six;
 }
 
-/* TODO: color change + animations on hover */
+/* TODO: animations on hover */
 .btn {
     background-color: var(--clr-grey);
     padding: 0.5em 1em;
     display: inline-block;
     margin: 3rem 0;
     font-size: 1.25em;
+}
+
+.btn:hover {
+    background-color: var(--clr-red);
 }
 
 /* contact section */

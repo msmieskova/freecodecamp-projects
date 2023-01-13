@@ -37,7 +37,6 @@ nav {
     background-color: var(--clr-red);
     position: fixed;
     top: 0;
-    /* padding: 1rem 3rem; */
     display: flex;
     justify-content: flex-end;
     border-bottom: 2px solid var(--clr-darkgrey);
@@ -154,7 +153,6 @@ nav ul {
     grid-area: six;
 }
 
-/* TODO: animations on hover */
 .btn {
     background-color: var(--clr-grey);
     padding: 0.5em 1em;
@@ -176,7 +174,6 @@ nav ul {
 
 .btn:hover .fa-chevron-right {
     transform: translateX(0.25rem);
-    
 }
 
 /* contact section */

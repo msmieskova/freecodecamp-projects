@@ -6,8 +6,8 @@
     --clr-darkgrey: rgb(31, 31, 31);
     --clr-grey: rgb(57, 61, 70);
     --clr-blue: rgb(62, 78, 121);
-    --clr-white: white;
-    --clr-orange: orange;
+    --clr-white: rgb(236, 236, 236);
+    --clr-orange: rgb(255, 102, 0);
 }
 
 /* styles reset */
@@ -107,14 +107,24 @@ nav ul {
     background-color: var(--clr-grey);
 }
 
-.tile:hover .project-name::before {
-    content: "< ";
+.project-name::before,
+.project-name::after {
     color: var(--clr-orange);
+    opacity: 0;
+    transition: 0.35s ease-in-out;
 }
 
-.tile:hover .project-name::after {
+.project-name::before {
+    content: "< ";
+}
+
+.project-name::after {
     content: " />";
-    color: var(--clr-orange);
+}
+
+.tile:hover .project-name::before,
+.tile:hover .project-name::after {
+    opacity: 1;
 }
 
 .project-img {

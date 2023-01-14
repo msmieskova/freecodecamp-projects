@@ -28,7 +28,13 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+@media (min-width: 980px) {
+    h1 {
+        font-size: 4rem;
+    }
 }
 
 /* nav styles */
@@ -43,17 +49,34 @@ nav {
     z-index: 5;
 }
 
+@media (max-width: 460px) {
+    nav {
+        justify-content: center;
+    }
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 2rem;
+}
+
+@media (min-width: 461px) {
+    nav ul {
+        margin-right: 2rem;
+    }
 }
 
 .nav-link {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 1rem;
+}
+
+@media (min-width: 980px) {
+    .nav-link {
+        font-size: 1.5rem;
+    }
 }
 
 .nav-link:hover {
@@ -75,22 +98,40 @@ nav ul {
 #about > p {
     color: var(--clr-red);
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 200;
+}
+
+@media (min-width: 980px) {
+    #about > p {
+        font-size: 2rem;
+    }
 }
 
 /* work section */
 #work {
     background-color: var(--clr-blue);
     text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+    padding: 5rem 1rem 2rem 1rem;
+}
+
+@media (max-width: 460px) {
+    #work {
+        padding-top: 3rem;
+    }
 }
 
 #work > h2 {
     font-size: 2.5rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid var(--clr-white);
     margin-bottom: 3rem;
+}
+
+@media (max-width: 460px) {
+    #work > h2 {
+        font-size: 2rem;
+    }
 }
 
 .grid {
@@ -102,6 +143,27 @@ nav ul {
     max-width: 80rem;
     margin: 0 auto;
     gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-areas: 
+            "one two"
+            "three four"
+            "five six";
+    }
+}
+
+@media (max-width: 720px) {
+    .grid {
+        grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+    }
 }
 
 .tile {
@@ -174,6 +236,12 @@ nav ul {
     border-radius: 3px;
 }
 
+@media (max-width: 460px) {
+    .btn {
+        margin: 2rem 0;
+    }
+}
+
 .btn:hover {
     background-color: var(--clr-red);
 }
@@ -190,12 +258,18 @@ nav ul {
 /* contact section */
 #contact {
     background-color: var(--clr-grey);
-    height: calc(100vh - 10.5rem);   
+    height: calc(85vh);   
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 3rem;
+}
+
+@media (max-width: 460px) {
+    #contact h1 {
+        font-size: 2rem;
+    }
 }
 
 #contact p {
@@ -204,12 +278,20 @@ nav ul {
     font-weight: 200;
 }
 
+@media (max-width: 460px) {
+    #contact p {
+        font-size: 1rem;
+    }
+}
+
 address {
     font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2rem;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
 }
 
 .address-link {
@@ -234,9 +316,21 @@ address {
 footer {
     background-color: var(--clr-grey);
     border-top: 4px solid var(--clr-red);
-    padding: 2rem 0;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    align-items: center;
+    
+}
+
+@media (max-width: 460px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
 }
